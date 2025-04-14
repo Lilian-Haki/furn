@@ -1,9 +1,3 @@
-/*
-* Template Name: UntreeStore
-* Template Author: Untree.co
-* Author URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 body {
   overflow-x: hidden;
@@ -30,8 +24,11 @@ a {
   a.more {
     font-weight: 600; }
 
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
 .custom-navbar {
-  background: #3b5d50 !important;
+  background: #3b4a5d !important;
   padding-top: 20px;
   padding-bottom: 20px; }
   .custom-navbar .navbar-brand {
@@ -39,6 +36,9 @@ a {
     font-weight: 600; }
     .custom-navbar .navbar-brand > span {
       opacity: .4; }
+  .custom-navbar .nav-link .dropdown:hover .dropdown-menu {
+  display: block;
+  }
   .custom-navbar .navbar-toggler {
     border-color: transparent; }
     .custom-navbar .navbar-toggler:active, .custom-navbar .navbar-toggler:focus {
@@ -64,7 +64,7 @@ a {
         bottom: 0;
         left: 8px;
         right: 8px;
-        background: #f9bf29;
+        background: #d8d9df;
         height: 5px;
         opacity: 1;
         visibility: visible;
@@ -96,7 +96,7 @@ a {
         margin-right: 20px; }
 
 .hero {
-  background: #3b5d50;
+  background: #3b4a5d;
   padding: calc(4rem - 30px) 0 0rem 0; }
   @media (min-width: 768px) {
     .hero {
@@ -181,11 +181,11 @@ a {
       border-color: #314d43; }
   .btn.btn-secondary {
     color: #2f2f2f;
-    background: #f9bf29;
-    border-color: #f9bf29; }
+    background: #bbd1dd;
+    border-color: #415080; }
     .btn.btn-secondary:hover {
-      background: #f8b810;
-      border-color: #f8b810; }
+      background: #5b588b;
+      border-color: #817992; }
   .btn.btn-white-outline {
     background: transparent;
     border-width: 2px;

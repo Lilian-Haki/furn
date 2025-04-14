@@ -1,10 +1,4 @@
-<!-- /*
-* Bootstrap 5
-* Template Name: Furni
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,7 +15,7 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
-		<title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co </title>
+		<title>Furni</title>
 	</head>
 
 	<body>
@@ -41,15 +35,18 @@
 						<li class="nav-item active">
 							<a class="nav-link" href="index.html">Home</a>
 						</li>
-						<li><a class="nav-link" href="shop.html">Shop</a></li>
+						<li><a class="nav-link" href="shop.html">Products</a></li>
 						<li><a class="nav-link" href="about.html">About us</a></li>
-						<li><a class="nav-link" href="services.html">Services</a></li>
-						<li><a class="nav-link" href="blog.html">Blog</a></li>
 						<li><a class="nav-link" href="contact.html">Contact us</a></li>
 					</ul>
 
 					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-						<li><a class="nav-link" href="#"><img src="images/user.svg"></a></li>
+						<li><a class="nav-link dropdown" href="#"><img src="images/user.svg"></a>
+							<!-- <ul class="" aria-labelledby="userDropdown">
+								<li><a class="dropdown-item" href="login.html">Login</a></li>
+								<li><a class="dropdown-item" href="signup.html">Register</a></li>
+							  </ul> -->
+						</li>
 						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
 					</ul>
 				</div>
@@ -66,7 +63,7 @@
 							<div class="intro-excerpt">
 								<h1>Modern Interior <span clsas="d-block">Design Studio</span></h1>
 								<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-								<p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+								<p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore More</a></p>
 							</div>
 						</div>
 						<div class="col-lg-7">
@@ -88,49 +85,61 @@
 					<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
 						<h2 class="mb-4 section-title">Crafted with excellent material.</h2>
 						<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. </p>
-						<p><a href="shop.html" class="btn">Explore</a></p>
+						<p><a href="shop.html" class="btn">Explore More</a></p>
 					</div> 
 					<!-- End Column 1 -->
 
 					<!-- Start Column 2 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
+						<div class="product-item">
 							<img src="images/product-1.png" class="img-fluid product-thumbnail">
 							<h3 class="product-title">Nordic Chair</h3>
 							<strong class="product-price">$50.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+						  
+							<span 
+							  class="icon-cross add-to-cart" 
+							  data-product='{"name":"Nordic Chair", "price":50, "image":"images/product-1.png"}'
+							  style="cursor:pointer;"
+							>
+							  <img src="images/cross.svg" class="img-fluid">
 							</span>
-						</a>
+						  </div>						  
 					</div> 
 					<!-- End Column 2 -->
 
 					<!-- Start Column 3 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
+						<div class="product-item">
 							<img src="images/product-2.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Kruzo Aero Chair</h3>
-							<strong class="product-price">$78.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+							<h3 class="product-title">Kruzo Aero</h3>
+							<strong class="product-price">$70.00</strong>
+						  
+							<span 
+							  class="icon-cross add-to-cart" 
+							  data-product='{"name":"Kruzo Aero", "price":70, "image":"images/product-2.png"}'
+							  style="cursor:pointer;"
+							>
+							  <img src="images/cross.svg" class="img-fluid">
 							</span>
-						</a>
+						  </div>	
 					</div>
 					<!-- End Column 3 -->
 
 					<!-- Start Column 4 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
+						<div class="product-item">
 							<img src="images/product-3.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Ergonomic Chair</h3>
-							<strong class="product-price">$43.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+							<h3 class="product-title">Egornomic Chair</h3>
+							<strong class="product-price">$90.00</strong>
+						  
+							<span 
+							  class="icon-cross add-to-cart" 
+							  data-product='{"name":"Egornomic Chair", "price":90, "image":"images/product-3.png"}'
+							  style="cursor:pointer;"
+							>
+							  <img src="images/cross.svg" class="img-fluid">
 							</span>
-						</a>
+						  </div>	
 					</div>
 					<!-- End Column 4 -->
 
@@ -235,18 +244,18 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-						<div class="product-item-sm d-flex">
-							<div class="thumbnail">
-								<img src="images/product-1.png" alt="Image" class="img-fluid">
-							</div>
-							<div class="pt-3">
-								<h3>Nordic Chair</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
-								<p><a href="#">Read More</a></p>
-							</div>
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<div class="product-item">
+						  <img src="images/product-1.png" class="img-fluid product-thumbnail">
+						  <h3 class="product-title">Nordic Chair</h3>
+						  <strong class="product-price">$50.00</strong>
+					  
+						  <span class="icon-cross add-to-cart" data-product='{"name":"Nordic Chair","price":50,"image":"images/product-1.png"}'>
+							<img src="images/cross.svg" class="img-fluid">
+						  </span>
 						</div>
-					</div>
+					  </div>
+					  
 
 					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 						<div class="product-item-sm d-flex">
@@ -483,7 +492,7 @@
 		</footer>
 		<!-- End Footer Section -->	
 
-
+				  
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
